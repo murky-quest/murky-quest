@@ -1,0 +1,24 @@
+{
+  "name": "murky-quest-worldbuilding-backend",
+  "version": "1.0.0",
+  "description": "murky-quest worldbuilding backend module",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node src/index.ts",
+    "test": "jest",
+    "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=worldbuilding.backend\" psql -U postgres -d murky-quest -h localhost"
+  },
+  "workspaces": [
+    "nest.vendor"
+  ],
+  "prisma": {
+    "schema": "prisma.vendor/schema.prisma"
+  },
+  "devDependencies": {
+    "prisma": "^4.5.0",
+    "tsconfig-paths": "^4.1.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.5.0"
+  }
+}

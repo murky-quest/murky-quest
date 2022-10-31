@@ -12,7 +12,8 @@
     "shared/testing",
     "modules/app.next",
     "modules/suggestions.backend",
-    "modules/suggestions.frontend"
+    "modules/suggestions.frontend",
+    "modules/worldbuilding.backend"
   ],
   "devDependencies": {
     "@types/jest": "^29.0.1",
