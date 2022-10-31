@@ -39,7 +39,6 @@ A roguelike-like web game.
 Modules:
 
 - Suggestions:
-  - [Chats Backend](./modules/chats.backend/README.md)
   - [Suggestions Backend](./modules/suggestions.backend/README.md)
   - [Suggestions Frontend](./modules/suggestions.frontend/README.md)
 - Users:
