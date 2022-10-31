@@ -1,0 +1,8 @@
+{
+  "name": "dicty-shared-testing",
+  "version": "1.0.0",
+  "description": "Dicty shared testing module",
+  "scripts": {
+    "test": "jest"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "dicty-shared-misc",
+  "version": "1.0.0",
+  "description": "Dicty shared miscellaneous module",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0"
+  }
+}
