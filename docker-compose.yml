@@ -1,0 +1,27 @@
+version: "3.3"
+
+services:
+  murkyindex:
+    build: .
+    image: murky-quest-image
+    container_name: murky-quest-container
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  proxy:
+    image: nginx:alpine
+    container_name: web-proxy
+    restart: unless-stopped
+    volumes:
+      - ./proxy.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
+    depends_on:
+      - murkyindex
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
