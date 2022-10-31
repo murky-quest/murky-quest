@@ -1,7 +1,7 @@
 {
-  "name": "dicty-suggestions-frontend",
+  "name": "murky-quest-suggestions-frontend",
   "version": "1.0.0",
-  "description": "Dicty suggestions frontend module",
+  "description": "murky-quest suggestions frontend module",
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node src/index.ts",

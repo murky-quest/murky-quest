@@ -1,7 +1,7 @@
 {
-  "name": "dicty-shared-misc",
+  "name": "murky-quest-shared-misc",
   "version": "1.0.0",
-  "description": "Dicty shared miscellaneous module",
+  "description": "murky-quest shared miscellaneous module",
   "scripts": {
     "test": "jest"
   },

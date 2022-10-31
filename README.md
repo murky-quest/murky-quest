@@ -1,6 +1,6 @@
-# Dicty
+# Murky Quest
 
-Learn vocabulary and read books with ease!
+A roguelike-like web game.
 
 ## Tech assumptions
 

@@ -1,12 +1,12 @@
 {
-  "name": "dicty-suggestions-backend",
+  "name": "murky-quest-suggestions-backend",
   "version": "1.0.0",
-  "description": "Dicty suggestions backend module",
+  "description": "murky-quest suggestions backend module",
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node src/index.ts",
     "test": "jest",
-    "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=suggestions.backend\" psql -U postgres -d dicty -h localhost"
+    "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=suggestions.backend\" psql -U postgres -d murky-quest -h localhost"
   },
   "workspaces": [
     "nest.vendor"

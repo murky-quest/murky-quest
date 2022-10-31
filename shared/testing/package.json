@@ -1,7 +1,7 @@
 {
-  "name": "dicty-shared-testing",
+  "name": "murky-quest-shared-testing",
   "version": "1.0.0",
-  "description": "Dicty shared testing module",
+  "description": "murky-quest shared testing module",
   "scripts": {
     "test": "jest"
   }

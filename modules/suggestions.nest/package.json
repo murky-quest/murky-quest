@@ -1,5 +1,5 @@
 {
-  "name": "dicty-suggestions-nest",
+  "name": "murky-quest-suggestions-nest",
   "version": "1.0.0",
   "scripts": {
     "prebuild": "rimraf dist",
