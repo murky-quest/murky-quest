@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { SuggestionsModule } from '@module/nest';
+import { ExcerptsModule } from '@module/excerpts/nest';
 @Module({
-  imports: [SuggestionsModule],
+  imports: [ExcerptsModule],
 })
 export class AppModule {}
