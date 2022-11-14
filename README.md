@@ -48,3 +48,7 @@ Shared:
 
 - [Common](./shared/common/README.md)
 - [Testing](./shared/testing/README.md)
+
+Tools:
+
+- [Profiling workspace settings](./tools/settings-profile/README.md)
