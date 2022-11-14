@@ -1,10 +1,18 @@
 version: "3.3"
 
 services:
-  murkyindex:
-    build: .
-    image: murky-quest-image
-    container_name: murky-quest-container
+  # murkyindex:
+  #   build: .
+  #   image: murky-quest-image
+  #   container_name: murky-quest-container
+  #   restart: unless-stopped
+  #   networks:
+  #     - app-network
+
+  murq-worldbuilding-backend-service:
+    build: ./modules/worldbuilding.backend
+    image: murq-worldbuilding-backend-service-image
+    container_name: murq-worldbuilding-backend-service-container
     restart: unless-stopped
     networks:
       - app-network
@@ -18,9 +26,21 @@ services:
     ports:
       - 80:80
     depends_on:
-      - murkyindex
+      - murq-worldbuilding-backend-service
+      # - murkyindex
     networks:
       - app-network
+  
+  # postgres:
+  #   image: postgres:13.5
+  #   restart: always
+  #   environment:
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres
+  #   volumes:
+  #     - postgres:/var/lib/postgresql/data
+  #   ports:
+  #     - '5432:5432'
 
 networks:
   app-network:
