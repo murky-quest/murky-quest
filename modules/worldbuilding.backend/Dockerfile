@@ -2,9 +2,13 @@ FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
-COPY ./../.. .
+COPY . .
 
-RUN 'cd ./modules/worldbuilding.backend; npm run setup'
+RUN npm run setup
+
+WORKDIR /usr/src/app/modules/worldbuilding.backend
+
+RUN npm run setup
 
 EXPOSE 7701
 

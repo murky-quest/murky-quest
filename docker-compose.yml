@@ -1,21 +1,18 @@
 version: "3.3"
 
 services:
-  # murkyindex:
-  #   build: .
-  #   image: murky-quest-image
-  #   container_name: murky-quest-container
-  #   restart: unless-stopped
-  #   networks:
-  #     - app-network
-
+  # TODO: improve naming
   murq-worldbuilding-backend-service:
-    build: ./modules/worldbuilding.backend
+    build:
+      context: .
+      dockerfile: ./modules/worldbuilding.backend/Dockerfile
     image: murq-worldbuilding-backend-service-image
     container_name: murq-worldbuilding-backend-service-container
     restart: unless-stopped
     networks:
       - app-network
+    ports:
+      - "7701:7701"
 
   proxy:
     image: nginx:alpine
@@ -27,10 +24,9 @@ services:
       - 80:80
     depends_on:
       - murq-worldbuilding-backend-service
-      # - murkyindex
     networks:
       - app-network
-  
+
   # postgres:
   #   image: postgres:13.5
   #   restart: always
