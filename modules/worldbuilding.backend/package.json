@@ -4,6 +4,8 @@
   "description": "murky-quest worldbuilding backend module",
   "main": "index.js",
   "scripts": {
+    "setup": "cd nest\\.vendor && npm install; cd ..",
+    "start": "cd nest\\.vendor && npm run start; cd ..",
     "start:dev": "ts-node src/index.ts",
     "test": "jest",
     "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=worldbuilding.backend\" psql -U postgres -d murky-quest -h localhost"

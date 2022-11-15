@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "settings_profile": "ts-node ./tools/settings-profile/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "setup": "cd shared/common && npm install; cd ..",
+    "start": "node index.js"
   },
   "workspaces": [
     "shared/common",
