@@ -1,0 +1,12 @@
+{
+  "name": "murky-quest-worldbuilding-frontend",
+  "version": "1.0.0",
+  "description": "murky-quest worldbuilding frontend module",
+  "scripts": {
+  },
+  "workspaces": [
+  ],
+  "devDependencies": {
+    "tsconfig-paths": "^4.1.0"
+  }
+}

@@ -16,7 +16,8 @@
     "modules/app.next",
     "modules/suggestions.backend",
     "modules/suggestions.frontend",
-    "modules/worldbuilding.backend"
+    "modules/worldbuilding.backend",
+    "modules/worldbuilding.frontend"
   ],
   "devDependencies": {
     "@types/jest": "^29.0.1",
