@@ -1,3 +1,7 @@
+// TODO: Consider letting modules to have their own eslintrc (for independence),
+// but possibly with same contents for overall project consistency
+// (still, a module could then decide to diverge from the "archetypical" eslintrc).
+
 module.exports = {
   settings: {
     'import/resolver': {
