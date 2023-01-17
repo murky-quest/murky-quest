@@ -1,4 +1,4 @@
-version: "3.3"
+version: '3.3'
 
 services:
   # TODO: improve naming
@@ -12,7 +12,20 @@ services:
     networks:
       - app-network
     ports:
-      - "7701:7701"
+      - '7701:7701'
+
+  # TODO: improve naming
+  murq-worldbuilding-next-app-service:
+    build:
+      context: .
+      dockerfile: ./modules/worldbuilding.next-app/Dockerfile
+    image: murq-worldbuilding-next-app-service-image
+    container_name: murq-worldbuilding-next-app-service-container
+    restart: unless-stopped
+    networks:
+      - app-network
+    ports:
+      - '8801:8801'
 
   proxy:
     image: nginx:alpine
