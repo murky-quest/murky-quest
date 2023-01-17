@@ -3,11 +3,6 @@
     "require": ["tsconfig-paths/register"]
   },
   "compilerOptions": {
-    "baseUrl": "./src/",
-    "paths": {
-      "@modules/*": ["./../../../modules/*"],
-      "@shared/*": ["./../../../shared/*"]
-    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -21,8 +16,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@fe/*": ["./../worldbuilding.frontend/src/*"]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
