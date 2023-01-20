@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
 
-run-name: ${{ github.actor }} is running CI2 (TODO -> UT 🧪 + deployment)
+run-name: ${{ github.actor }} is running CI2 (TODO -> UT + deployment)
 
 jobs:
   build:
